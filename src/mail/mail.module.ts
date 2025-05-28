@@ -9,20 +9,21 @@ import { join } from 'path';
     MailerModule.forRootAsync({
       useFactory: () => ({
         transport: {
-          host: 'smtp.example.com', // Replace with your SMTP host
+          host: 'sandbox.smtp.mailtrap.io', // Replace with your SMTP host
+          port: '2525',
           auth: {
-            user: '', // Replace with your SMTP user
-            pass: '', // Replace with your SMTP password
+            user: 'b8ae85d66a1d17', // Replace with your SMTP user
+            pass: '8d45cec8494875', // Replace with your SMTP password
           },
         },
         defaults: {
-          from: 'shajib@gmail.com', // Replace with your default sender email
+          from: '"No Reply" <no-reply@example.com>', // Replace with your default sender email
         },
         template: {
-          dir: join(__dirname, 'templates'), // Path to your email templates
+          dir: join(process.cwd(), 'src', 'mail', 'templates'), // Path to your email templates
           adapter: new HandlebarsAdapter(),
           options: {
-            strict: true,
+            strict: false,
           },
         },
       }),

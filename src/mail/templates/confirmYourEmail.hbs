@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Account Verification</title>
+  <style type="text/css">
+    a { text-decoration: none; outline: none; }
+
+    @media (max-width: 649px) {
+      .o_col-full { max-width: 100% !important; }
+      .o_col-half { max-width: 50% !important; }
+
+      .o_hide-lg {
+        display: inline-block !important;
+        font-size: inherit !important;
+        max-height: none !important;
+        line-height: inherit !important;
+        overflow: visible !important;
+        width: auto !important;
+        visibility: visible !important;
+      }
+
+      .o_hide-xs, .o_hide-xs.o_col_i {
+        display: none !important;
+        font-size: 0 !important;
+        max-height: 0 !important;
+        width: 0 !important;
+        line-height: 0 !important;
+        overflow: hidden !important;
+        visibility: hidden !important;
+        height: 0 !important;
+      }
+
+      .o_xs-center { text-align: center !important; }
+      .o_xs-left { text-align: left !important; }
+      .o_xs-right { text-align: left !important; }
+
+      table.o_xs-left {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        float: none !important;
+      }
+
+      table.o_xs-right {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        float: none !important;
+      }
+
+      table.o_xs-center {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+      }
+
+      h1.o_heading { font-size: 32px !important; line-height: 41px !important; }
+      h2.o_heading { font-size: 26px !important; line-height: 37px !important; }
+      h3.o_heading { font-size: 20px !important; line-height: 30px !important; }
+
+      .o_xs-py-md { padding-top: 24px !important; padding-bottom: 24px !important; }
+      .o_xs-pt-xs { padding-top: 8px !important; }
+      .o_xs-pb-xs { padding-bottom: 8px !important; }
+    }
+
+    @media screen {
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local("Roboto"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");
+      }
+
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: local("Roboto Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
+      }
+
+      .o_sans, .o_heading {
+        font-family: "Roboto", sans-serif !important;
+      }
+
+      .o_heading, strong, b {
+        font-weight: 700 !important;
+      }
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="o_body o_bg-light"
+  style="width: 100%;margin: 0px;padding: 0px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: #f4f4f4;">
+
+  <!-- preview-text -->
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+    <tr>
+      <td class="o_hide" align="center"
+        style="display: none;font-size: 0;max-height: 0;width: 0;line-height: 0;overflow: hidden;mso-hide: all;visibility: hidden;">
+        Email Summary (Hidden)
+      </td>
+    </tr>
+  </table>
+
+  <!-- header -->
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+    <tr>
+      <td class="o_bg-light o_px-xs o_pt-lg o_xs-pt-xs" align="center"
+        style="background-color: #f4f4f4;padding-left: 8px;padding-right: 8px;padding-top: 32px;">
+        <table class="o_block" width="100%" style="max-width: 632px;margin: 0 auto;">
+          <tr>
+            <td class="o_bg-dark o_px o_py-md o_br-t o_sans o_text" align="center"
+              style="background-color: #ffffff;border-radius: 4px 4px 0 0;padding: 24px 16px;border-bottom: 1px solid #d3dce0;font-family: Helvetica, Arial, sans-serif;">
+              <a class="o_text-white" href="http://packmycode.com/" style="color: #ffffff;">
+                <img src="https://cdn.packmycode.com/public/mail/logo.png" width="171" height="20" alt="SimpleApp"
+                  style="max-width: 171px;height: auto;border: 0;">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- main content -->
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+    <tr>
+      <td class="o_bg-light o_px-xs" align="center" style="background-color: #f4f4f4;padding: 0 8px;">
+        <table class="o_block" width="100%" style="max-width: 632px;margin: 0 auto;">
+          <tr>
+            <td class="o_bg-white o_px-md o_py o_sans o_text o_text-secondary" align="left"
+              style="font-family: Helvetica, Arial, sans-serif;background-color: #ffffff;color: #424651;padding: 32px 24px;font-size: 16px;line-height: 24px;">
+              <h2 style="margin-top: 0;">Dear {{first_name}},</h2>
+              <p style="margin-bottom: 10px;">Please confirm your email address to activate your PackMyCode account:</p>
+              <h2 style="text-align: center; margin-bottom: 10px;">{{verification_code}}</h2>
+              <p style="color: #999999;"><em>If you did not create this account, you may safely ignore this message.</em></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- footer -->
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+    <tr>
+      <td class="o_bg-light o_px-xs o_pb-lg o_xs-pb-xs" align="center"
+        style="background-color: #f4f4f4;padding: 0 8px 32px;">
+        <table class="o_block" width="100%" style="max-width: 632px;margin: 0 auto;">
+          <tr>
+            <td class="o_bg-white o_px-md o_py-lg o_bt-light o_br-b o_sans o_text-xs o_text-light" align="center"
+              style="font-family: Helvetica, Arial, sans-serif;background-color: #ffffff;color: #82899a;padding: 32px 24px;border-top: 1px solid #d3dce0;border-radius: 0 0 4px 4px;font-size: 14px;line-height: 21px;">
+              <p class="o_mb" style="margin-bottom: 5px;">
+                <a class="o_text-primary" href="https://example.com/" style="color: #126de5;">
+                  <img src="https://cdn.packmycode.com/public/mail/logo_icon-light.png" width="36" height="36" alt="SimpleApp"
+                    style="max-width: 36px;height: auto;border: 0;">
+                </a>
+              </p>
+              <p class="o_mb" style="margin-bottom: 5px;">©2025 Packmycode Ltd.</p>
+              <p class="o_mb" style="margin-bottom: 16px;">support@packmycode.com</p>
+              <p>
+                <a class="o_text-light o_underline" href="https://packmycode.com/help" style="color: #82899a; text-decoration: underline;">Help Center</a>
+                <span class="o_hide-xs"> • </span><br class="o_hide-lg">
+                <a class="o_text-light o_underline" href="https://packmycode.com/forum/questions" style="color: #82899a; text-decoration: underline;">Discussion</a>
+                <span class="o_hide-xs"> • </span><br class="o_hide-lg">
+                <a class="o_text-light o_underline" href="https://packmycode.com/Unsubscribe" style="color: #82899a; text-decoration: underline;">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <div class="o_hide-xs" style="font-size: 64px; line-height: 64px; height: 64px;">&nbsp;</div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
